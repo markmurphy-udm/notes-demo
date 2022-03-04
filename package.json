@@ -21,9 +21,12 @@
   "dependencies": {
     "@aws-cdk/aws-iam": "1.132.0",
     "@aws-cdk/core": "1.132.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@serverless-stack/cli": "0.56.1",
     "@serverless-stack/resources": "0.56.1",
     "aws-sdk": "^2.1049.0",
+    "conventional-changelog-eslint": "^3.0.9",
     "stripe": "^8.195.0",
     "uuid": "^7.0.3"
   }
