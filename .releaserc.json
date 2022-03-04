@@ -1,0 +1,50 @@
+{
+    "branch": "main",
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "eslint",
+          "releaseRules": [
+            { "tag": "New", "release": "major" },
+            { "tag": "Add", "release": "minor" },
+            { "tag": "Fix", "release": "patch" },
+            { "tag": "Update", "release": "minor" },
+            { "tag": "new", "release": "major" },
+            { "tag": "add", "release": "minor" },
+            { "tag": "fix", "release": "patch" },
+            { "tag": "update", "release": "minor" }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "eslint",
+          "releaseRules": [
+            { "tag": "New", "release": "major" },
+            { "tag": "Add", "release": "minor" },
+            { "tag": "Fix", "release": "patch" },
+            { "tag": "Update", "release": "minor" },
+            { "tag": "new", "release": "major" },
+            { "tag": "add", "release": "minor" },
+            { "tag": "fix", "release": "patch" },
+            { "tag": "update", "release": "minor" }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/github",
+      [
+        "@semantic-release/git", {
+          "assets": ["package.json", "CHANGELOG.md"],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  }
