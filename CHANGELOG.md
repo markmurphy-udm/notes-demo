@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/markmurphy-udm/notes-demo/compare/v1.0.0...v1.0.1) (2022-03-04)
+
+
+### patch
+
+* [ud-667] tags updated ([2426632](https://github.com/markmurphy-udm/notes-demo/commit/2426632d32d43a70e5e8f78859f44fba62115461))
+
 # 1.0.0 (2022-03-04)
 
 
